@@ -1,0 +1,32 @@
+class Vasilisa {
+	var age: Int = 23 // increase by one every December 14th
+	const val sex = Sex.Female
+	
+	val knowledge: MutableList<Lesson> = mutableListOf()
+	
+	abstract fun increaseBeauty(): Unit
+	
+	fun learnBlender(learningSession: LearningSession) {
+		knowledge.add(learningSession)
+	}
+	
+	fun main() {
+		while(true) {
+			increaseBeauty()
+		}
+	}
+}
+
+data class LearningSession(
+	val lesson: Lesson,
+	val date: LocalDate,
+)
+
+data class Lesson(
+	val title: String,
+)
+
+fun main() {
+	learnBlender(LearningSession(Lesson("Наложение материалов"), LocalDate("2023-04-06")))
+}
+

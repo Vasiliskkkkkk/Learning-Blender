@@ -1,6 +1,6 @@
 class Vasilisa {
 	var age: Int = 23 // increase by one every December 14th
-	const val sex = Sex.Female
+	const val sex: Sex = Sex.Female
 	
 	val knowledge: MutableList<Lesson> = mutableListOf()
 	

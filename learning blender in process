@@ -28,5 +28,6 @@ data class Lesson(
 
 fun main() {
 	learnBlender(LearningSession(Lesson("Наложение материалов"), LocalDate("2023-04-06")))
+	learnBlender(LearningSession(Lesson("Таз"), LocalDate("2023-04-06")))
 }
 
